@@ -1,0 +1,44 @@
+$BP: 750px;
+$BP_PC: 1280px;
+
+//COLOR
+$BG: #d4d4d4; //背景色
+$CR: #ffffff; //文字色
+$BC: #a6a6a6; //中間色
+
+//PC幅
+$PC_W: 750px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+// html, body {
+//     background: hsla(0,0%,5%,1);
+//   }
+
+/* SP 画面サイズが768px以下 */
+@media screen and (max-width: $BP) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
+
+/* PC 画面サイズが769px以上 */
+@media screen and (min-width: $BP+1) {
+  .pc {
+    display: block;
+  }
+  .sp {
+    display: none;
+  }
+}
