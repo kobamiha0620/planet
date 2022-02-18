@@ -43,3 +43,13 @@ $(function () {
   });
 });
 
+
+
+$(function () {
+  $('#openModal2').click(function(){
+      $('#modalArea2').fadeIn();
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea2').fadeOut();
+  });
+});
