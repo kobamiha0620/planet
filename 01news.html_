@@ -1,22 +1,16 @@
 
-  <!-- 変数名の設定 -->
-  
-
-  
-
-
 <!DOCTYPE html>
-<html lang="ja">    
+<html lang="ja">
+
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta property="og:url" content="https://scramble-planet.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="SCLAMBLE PLANET" />
-  <meta name="description" content="SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く">
-
   <meta property="og:description" content="SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く。" />
   <meta property="og:site_name" content="SCLAMBLE PLANET 公式サイト" />
   <meta property="og:image" content="img/ogp.png" />
@@ -33,17 +27,12 @@
   <!-- <link rel="stylesheet" href="css/style.css" /> -->
 
   <link rel="icon" href="/favicon.ico" id="favicon">
+
   <title>SCRAMBLE PLANET</title>
+</head> 
 
-</head>
-
-<body class="drawer drawer--right" id="home">
-
-
-
-
-
-    <div id="js-menu" class="menufix">
+<body class="drawer drawer--right">
+<div id="js-menu" class="menufix">
     <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
       <span class="drawer-hamburger-icon"></span>
@@ -73,148 +62,50 @@
             </li>
             <li><a class="drawer-menu-item drawer-toggle" href="#discography"><span
                   class="nav__menu--disco">DISCOGRAPHY</span></a></li>
-            <li><a class="drawer-menu-item drawer-toggle" href="/news.html"><span class="nav__menu--news"> news</span></a>
+            <li><a class="drawer-menu-item drawer-toggle" href="#news"><span class="nav__menu--news"> news</span></a>
             </li>
           </ul>
         </nav>
       </div>
-    </header>
-
+    </header> 
+    
+    
     <main class="main">
       <div class="main__inner">
-        <div class="main__logo">
-          <figure class="logo">SCLAMBLE PLANET</figure>
-        </div>
-        <p class="main__animeR">
-          <figure class="rocketR"></figure>
-          <figure class="borderR"></figure>
-        </p>
+        <div class="newspage" id="newspage">
+          <h2 class="news__ttl">news</h2>
 
-
-        <p class="main__txt">
-          スクランブルプラネット。<br />
-          そこは創作の星。<br />
-          クリエイターたちが交差して生まれた<br />
-          無限の可能性を秘めるクリエイションが、<br />
-          広大なインターネット空間を漂い私たちに届く。
-        </p>
-        <div class="main__anime">
-          <figure class="rocketL"></figure>
-          <figure class="borderL"></figure>
-        </div>
-
-        <div id="movie" class="movie">
-          <h2 class="movie__ttl">movie</h2>
-          
-
-
-          <ul class="movie__double--wrapper">
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J2tPDXjX5Ig" title="「青春下剋上」/ あすか Sound Produced by HoneyWorks＆音莉飴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <ul class="newspage__list">
+            <li id="news220203">
+              <div class="newspage__list--ttl">
+                <h2>SCRAMBLE PLANETから第一弾となる配信限定シングル
+                  「食べたい。」<br>音莉飴 Sound Produced by HoneyWorksがリリース！</h2>
+                <p class="newspage__list--date">20222.02.03</p>
               </div>
-              <p class="movie__youtube--txt">
-                青春下剋上 / あすか <br />
-                Sound Produced by HoneyWorks＆音莉飴</p>
-            </li>
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EhgMIfjjpWc" title="SCRAMBLE PLANET CONCEPT MOVIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p class="movie__youtube--txt">
-                「食べたい。」/ 音莉飴<br />
-                Sound Produced by HoneyWorks
-                (SCRAMBLE PLANET）
-              </p>
-            </li> 
-            <!-- <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OJupUKzKtME" title="「食べたい。」/ 音莉飴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-
-              <p class="movie__youtube--txt">
-                SCRAMBLE PLANET CONCEPT MOVIE<br />
-                【公式】SCRAMBLE PLANET -スクランブルプラネット
-              </p>
-            </li> -->
-          </ul>
-
-
-          <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener" class="movie__more--btn"><span class="movie__more--txt">MORE</span><span class="movie__more--arrow"></span></a>
-
-
-        </div>
-
-        <div class="discovery" id="discography">
-          <h2 class="discovery__ttl">discography</h2>
-          <ul class="discovery__list">
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/Newsimg02.png" alt="" style="border-radius: 16px;" />
-              </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date">
-                  2022.05.27
-                  <span class="discovery__txtblc--badge">6/3配信</span>
-                </p>
-                <p class="discovery__txtblc--name">青春下剋上 /<br>あすか</p>
-                <p class="discovery__txtblc--exe">Sound Produced by HoneyWorks ＆ 音莉飴</p>
-                <!-- <div class="btnWrap">
-                  <a href="https://linkco.re/tFDu1dzn" target="_blank" class="btnStreaming"></a>
-                </div> -->
+              <div class="newspage__list--con">
+                <p class="newspage__list--txt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
+                  さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
+                <div class="newspage__list--img">
+                  <img src="img/Newsimg01.png" width="100%" alt="食べたい。">
+                </div>
               </div>
             </li>
-
-
-            
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/firstMusic.svg" alt="" />
+            <li id="news220203">
+              <div class="newspage__list--ttl">
+                <h2>SCRAMBLE PLANETから第一弾となる配信限定シングル
+                  「食べたい。」<br>音莉飴 Sound Produced by HoneyWorksがリリース！</h2>
+                <p class="newspage__list--date">20222.02.03</p>
               </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date">
-                  2022.02.03
-                  <span class="discovery__txtblc--badge">配信中</span>
-                </p>
-                <p class="discovery__txtblc--name">「食べたい。」/ 音莉飴</p>
-                <p class="discovery__txtblc--exe">
-                  Sound Produced by HoneyWorks<br>
-                  (SCRAMBLE PLANET）
-                </p>
-                <div class="btnWrap">
-                  <a href="https://linkco.re/tFDu1dzn" target="_blank" class="btnStreaming"></a>
+              <div class="newspage__list--con">
+                <p class="newspage__list--txt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
+                  さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
+                <div class="newspage__list--img">
+                  <img src="img/Newsimg01.png" width="100%" alt="食べたい。">
                 </div>
               </div>
             </li>
           </ul>
-        </div>
 
-        <div class="news" id="news">
-          <h2 class="news__ttl">news</h2>
-
-          <ul class="news__article">
-            <li >
-              <a href="/news.html#latestNews01">
-                <p class="news__article--date">2022.05.27</p>
-              <p class="news__article--con">
-                第二弾配信限定シングル<br>
-                青春下剋上／あすか Sound Produced by HoneyWorks＆音莉飴<br>6/3から配信
-              </p>
-            </a>
-            </li>
-            <li >
-              <a href="/news.html#latestNews02">
-              <p class="news__article--date">2022.02.18</p>
-              <p class="news__article--con">
-                テレビ東京「#ウルトラマワス」番組内オーディション「#ウルトラチャレンジ」開催!<br>
-                SCRAMBLE PLANETが配信デビューを全面サポート
-              </p>
-            </a>
-          </li>
-
-          </ul>
 
           <!-- モーダルエリアここから -->
           <section id="modalArea" class="modalArea">
@@ -227,7 +118,7 @@
                   <p class="modalTxt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
                     さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
 
-                  <div class="modalImg"><img src="img/Newsimg01.png" width="100%" alt="食べたい。"></div>
+                  <div class="modalImg"></div>
 
                   <div class="news__snslink">
                     <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
@@ -288,7 +179,8 @@
     </main>
 
 
-    
+
+
     <div class="news__snslink">
       <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
         class="news__snslink--tiktok">tiktok</a>
@@ -297,7 +189,7 @@
       <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
         class="news__snslink--twitter">twitter</a>
     </div>  
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__inner">
 
         <h3 class="footer__subscribe">
@@ -332,7 +224,7 @@
           </li>
         </ul>
       </div>
-    </footer>  -->
+    </footer> 
     <div class="footer__renewel">
       <div class="footer__renewel--inner">
         <div class="footer__renewel--blc">
@@ -355,7 +247,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?20220218"></script>
 
     <!-- <script>
       $(".movie__youtube").slick({
@@ -396,9 +288,9 @@
 
 
 
+ 
 
 
-    
 
 </body>
 

@@ -1,84 +1,13 @@
 
   <!-- 変数名の設定 -->
-  
+  <% let pageId = 'home'; %>
 
-  
-
-
-<!DOCTYPE html>
-<html lang="ja">    
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:url" content="https://scramble-planet.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="SCLAMBLE PLANET" />
-  <meta name="description" content="SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く">
-
-  <meta property="og:description" content="SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く。" />
-  <meta property="og:site_name" content="SCLAMBLE PLANET 公式サイト" />
-  <meta property="og:image" content="img/ogp.png" />
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-
-
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="css/slick-theme.css" />
-  <link href="css/sandbox.css" rel="stylesheet">
-  <link href="css/drawer.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
-
-  <link rel="icon" href="/favicon.ico" id="favicon">
-  <title>SCRAMBLE PLANET</title>
-
-</head>
-
-<body class="drawer drawer--right" id="home">
+  <%- include('./_header', { pageId: pageId }) %>
 
 
 
 
-
-    <div id="js-menu" class="menufix">
-    <button type="button" class="drawer-toggle drawer-hamburger">
-      <span class="sr-only">toggle navigation</span>
-      <span class="drawer-hamburger-icon"></span>
-    </button>
-  </div>
-    
-  <div class="inner" style="overflow: hidden">
-    <header class="header" role="banner">
-      <div class="header__inner">
-        <a href="/"><figure class="slogo"> Planet</figure></a>
-        <div class="header__menu" id="headerMenu">
-          <p class="header__menu--ttl">MENU</p>
-          <button type="button" class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">toggle navigation</span>
-            <span class="drawer-hamburger-icon"></span>
-          </button>
-        </div>
-        <nav class="drawer-nav" role="navigation">
-          <p class="drawer-closebtn">
-            <span class="drawer-toggle"></span>
-          </p>
-          <p class="nav__logo"><a href="/" class="logo">SCLAMBLE PLANET</a></p>
-
-          <ul class="drawer-menu nav__menu">
-            <li><span class="nav__menu--ttl">Menu</span></li>
-            <li><a class="drawer-menu-item drawer-toggle" href="#movie"><span class="nav__menu--movie">movie</span></a>
-            </li>
-            <li><a class="drawer-menu-item drawer-toggle" href="#discography"><span
-                  class="nav__menu--disco">DISCOGRAPHY</span></a></li>
-            <li><a class="drawer-menu-item drawer-toggle" href="/news.html"><span class="nav__menu--news"> news</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%- include('./_menu') %>
 
     <main class="main">
       <div class="main__inner">
@@ -288,117 +217,9 @@
     </main>
 
 
-    
-    <div class="news__snslink">
-      <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
-        class="news__snslink--tiktok">tiktok</a>
-      <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
-        class="news__snslink--youtube">Youtube</a>
-      <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
-        class="news__snslink--twitter">twitter</a>
-    </div>  
-    <!-- <footer class="footer">
-      <div class="footer__inner">
+    <%- include('./_footer', { pageId: pageId }) %>
 
-        <h3 class="footer__subscribe">
-          <span></span>SCRAMBLE PLANETの楽曲を配信サービスで聴く
-        </h3>
-        <ul class="footer__music">
-          <li>
-            <a href="https://music.line.me/webapp/album/mb000000000258278f" target="_blank" rel="noopener" class="footer__music--line"><span>LINE MUSIC</span></a>
-          </li>
-          <li>
-            <a href="https://music.apple.com/jp/album/1607972135?mt=1&app=music&at=10l7qr" target="_blank" rel="noopener" class="footer__music--apple"><span>Apple music</span></a>
-          </li>
-          <li>
-            <a href="https://open.spotify.com/album/789hLbG1tjs4xfuMAL3m8l" target="_blank" rel="noopener" class="footer__music--spotify"><span>Spotify</span></a>
-          </li>
-          <li>
-            <a href="https://www.amazon.co.jp/gp/product/B09RN8PL7V/ref=as_li_tf_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B09RN8PL7V&linkCode=as2&tag=tcjaz-22" target="_blank" rel="noopener" class="footer__music--amazon"><span>Amazon Music</span></a>
-          </li>
-        </ul>
-        <h3 class="footer__cart">
-          <span></span>SCRAMBLE PLANETの楽曲を購入・ダウンロードする
-        </h3>
-        <ul class="footer__music">
-          <li>
-            <a href="https://music.apple.com/jp/album/1607972135?app=itunes" target="_blank" rel="noopener" class="footer__music--itune"><span>iTune</span></a>
-          </li>
-          <li>
-            <a href="https://recochoku.jp/album/A2002670710" target="_blank" rel="noopener" class="footer__music--reco"><span>レコチョク</span></a>
-          </li>
-          <li>
-            <a href="https://mora.jp/package/43000074/TCJPR0000873345/" target="_blank" rel="noopener" class="footer__music--mora"><span>Mora</span></a>
-          </li>
-        </ul>
-      </div>
-    </footer>  -->
-    <div class="footer__renewel">
-      <div class="footer__renewel--inner">
-        <div class="footer__renewel--blc">
-          <a href="http://www.incs-toenter.jp/" class="footer__renewel--incs" target="_blank">incs</a>
-          <a href="https://twinplanet.co.jp" class="footer__renewel--twin" target="_blank">twinplanet</a>
-
-        </div>
-      </div>
-
-    <div class="copyright">
-      <p>©SCRAMBLE PLANET</p>
-    </div>
-  </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
-    </script>
-
-    <script src="js/main.js"></script>
-
-    <!-- <script>
-      $(".movie__youtube").slick({
-        mobileFirst: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: true,
-
-        // pauseOnFocus: false,
-        // pauseOnHover: true,
-        // pauseOnDotsHover: false,
-        // fade: true,
-        responsive: [
-          {
-            breakpoint: 750,
-            settings: {
-              dots: true,
-              arrows: false,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              autoplay: false,
-            },
-          },
-        ],
-      });
-    </script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/drawer.min.js" charset="utf-8"></script>
-    <script>
-      $(document).ready(function () {
-        $('.drawer').drawer();
-      });
-    </script>
-
-
-
-
-
-    
+    <% console.log(jsonData) %>
 
 </body>
 

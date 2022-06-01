@@ -1,0 +1,101 @@
+  <!-- 変数名の設定 -->
+
+  <% let pageId = 'news'; %>
+
+  <%- include('./_header', { pageId: pageId }) %>
+
+
+  <body class="drawer drawer--right">
+    <%- include('./_menu') %>
+
+    <main class="main">
+      <div class="main__inner">
+
+        <div class="news" id="news">
+          <h2 class="news__ttl">news</h2>
+
+          <ul class="news__article">
+            <li id="latestNews01">
+              <div class="news__article--img">
+                <img src="img/Newsimg02.png" width="100%" alt="青春下剋上">
+
+              </div>
+              <div class="news__article--txts">
+                <p class="news__article--date">2022.05.27</p>
+                <p class="modalTtl">第二弾配信限定シングル<br>
+                  青春下剋上／あすか Sound Produced by HoneyWorks＆音莉飴<br>6/3から配信</p>
+                <p class="modalTxt">テレビ東京、#ウルトラマワスの#ウルトラチャレンジオーディション優勝者あすかがヴォーカルを務め、HoneyWorksと音莉飴（ねりあめ）がサウンドプロデュースを担当しました。</p>
+
+              </div>
+            </li>
+
+
+            <li id="latestNews02">
+              <div class="news__article--img">
+              </div>
+              <div class="news__article--txts">
+                <p class="news__article--date">2022.02.18</p>
+                <p class="modalTtl">テレビ東京「#ウルトラマワス」番組内オーディション「#ウルトラチャレンジ」開催!<br>
+                  SCRAMBLE PLANETが配信デビューを全面サポート</p>
+                <p class="modalTxt">2月3日からスタートしたテレビ東京の新番組「#ウルトラマワス」。<br>
+                  番組内で音楽オーディション企画を開催いたします。<br>
+                  オーディション名は『#ウルトラチャレンジ』。</p>
+                <p class="modalTxt" style="margin-top: 20px;">「最優秀賞」に選ばれた方には、あなたのチャレンジを「#ウルトラマワス」が応援！<br>
+                  副賞として、「HoneyWorks」と「音莉飴」によるプロデュース&サポートにより「SCRAMBLE PLANET」があなたのデビューを全面サポート致します。</p>
+
+                <p class="modalTxt" style="margin-top: 20px; margin-bottom: 40px;">詳細は以下をチェック！<br><br>
+                  <a href="https://www.tv-tokyo.co.jp/ultramawasu/boshu/" target="_blank">
+                    https://www.tv-tokyo.co.jp/ultramawasu/boshu/</a></p>
+              </div>
+            </li>
+
+
+            <li id="">
+              <div class="news__article--img">
+                <img src="img/Newsimg01.png" width="100%" alt="食べたい。">
+
+              </div>
+              <div class="news__article--txts">
+                <p class="news__article--date">2022.02.03</p>
+                <p class="modalTtl">SCRAMBLE PLANETから第一弾となる配信限定シングル<br>
+                  「食べたい。」音莉飴 Sound Produced by HoneyWorksがリリース！</p>
+                <p class="modalTxt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
+                  さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+          <!-- モーダルエリア2ここから -->
+          <section id="modalArea2" class="modalArea">
+            <div id="modalBg" class="modalBg"></div>
+            <div class="modalWrapper" style="height: auto;">
+              <div class="modalInner">
+                <div class="modalContents">
+
+
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- モーダルエリアここまで -->
+
+
+
+        </div>
+      </div>
+    </main>
+
+
+    <%- include('./_footer', { pageId: pageId }) %>
+
+
+
+
+  </body>
+
+  </html>

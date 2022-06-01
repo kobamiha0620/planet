@@ -1,0 +1,18 @@
+{
+  "siteInfo": {
+    "name": "SCRAMBLE PLANET",
+    "siteUrl": "https://scramble-planet.com/"
+  },
+  "pages": {
+    "home": {
+      "name": "HOME",
+      "title": "SCRAMBLE PLANET",
+      "description": "SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く"
+    },
+    "news": {
+      "name": "NEWS",
+      "title": "SCRAMBLE PLANET",
+      "description": "SCLAMBLE PLANET 公式サイト スクランブルプラネット。そこは創作の星。クリエイターたちが交差して生まれた無限の可能性を秘めるクリエイションが、広大なインターネット空間を漂い私たちに届く"
+    }
+  }
+}

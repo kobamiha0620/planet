@@ -53,3 +53,4 @@ $(function () {
     $('#modalArea2').fadeOut();
   });
 });
+

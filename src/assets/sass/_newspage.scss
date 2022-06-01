@@ -1,0 +1,70 @@
+@use "base";
+
+
+#newspage{
+    .news{
+        padding-top: 100px;
+        &__article{
+            width: 80%;
+            li{
+                border-bottom: solid 1px #FFF;
+                padding: 50px 0;
+                display: flex;
+            }
+            &--img{
+                width: 30%;
+                max-width: 30%;
+                margin: 0 5% 0 0;
+                img{
+                    border-radius: 15px;
+                }
+            }
+            p{
+                color: #FFF;
+                
+            }
+            a{
+                color: #5570E8;
+            }
+            &--txts{
+                width: 70%;
+                max-width: 70%;
+            }
+        }
+            /* SP 画面サイズが750px以下--------------------------------- */
+    @media screen and (max-width: base.$BP) {
+
+        padding: 0;
+        padding-top: 20vw;
+        &__article{
+            width: 80%;
+            li{
+                padding: 8vw 0;
+                display: block;
+            }
+            &--img{
+                width: 100%;
+                max-width: 100%;
+                margin: 0 0 5% 0;
+
+                img{
+                    border-radius: 15px;
+                }
+            }
+            &--txts{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    
+}
+.news__article--date{
+    margin-bottom: 10px;
+}
+    }
+    .main{
+        min-height: 100vh;
+
+    }
+
+}

@@ -1,6 +1,7 @@
 @charset "utf-8";
-@import "reset";
-@import "base";
+@use "reset";
+@use "base";
+@use "newspage";
 
 * {
   box-sizing: border-box;
@@ -18,7 +19,6 @@ body {
   animation: bgiLoop 60s infinite;
 }
 
-
 @keyframes bgiLoop {
   0% {
     background-position: 0 0;
@@ -32,8 +32,8 @@ body {
 
 .header {
   &__inner {
-    border-top: solid 2px $CR;
-    border-bottom: solid 2px $CR;
+    border-top: solid 2px base.$CR;
+    border-bottom: solid 2px base.$CR;
     padding: 17px 13px;
     display: flex;
     justify-content: space-between;
@@ -146,7 +146,7 @@ body {
 
   &__txt {
     text-align: center;
-    color: $CR;
+    color: base.$CR;
     font-size: 1.8rem;
     line-height: 2;
     padding: 20px 0;
@@ -230,7 +230,7 @@ body {
 }
 
 .movie {
-  padding: 50px 0 106px;
+  padding: 200px 0 106px;
 
   &__ttl {
     white-space: nowrap;
@@ -264,7 +264,7 @@ body {
 
     &--txt {
       font-size: 1rem;
-      color: $CR;
+      color: base.$CR;
       line-height: 1.5;
       margin-top: 1em;
       padding-bottom: 20px;
@@ -314,6 +314,56 @@ body {
       }
     }
   }
+
+  &__more{
+    .movie__double--wrapper{
+      display: none;
+    }
+    &--btn{
+      text-align: center;
+      margin: 20px auto;
+      display: inline-block;
+      background-color: base.$BC;
+      padding: 8px 10px 8px 15px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      max-width: 200px;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.7;
+        .movie__more--arrow{
+         transform:rotate(-90deg);
+          margin-top: -1px;
+          animation: 0.3s all rotation;
+          margin-left: 10px;
+
+        }
+      }
+    }
+    &--txt{
+
+      background: url(base.$PATH + "more.svg") no-repeat;
+      white-space: nowrap;
+      text-indent: -9999px;
+      display: inline-block;
+      width: 130px;
+      height: 22px;
+    }
+    &--arrow{
+      background: url(base.$PATH + "arrow_more.svg") no-repeat;
+      white-space: nowrap;
+      text-indent: -9999px;
+      display: inline-block;
+      width: 17px;
+      height: 11px;
+      margin-left: 10px;
+      margin-top: 1px;
+      transform:rotate(0deg);
+      transition: .3s;
+    }
+  }
 }
 
 
@@ -333,19 +383,12 @@ body {
   &__list {
     overflow: hidden;
     width: 1120px;
-    // li {
-    //   display: flex;
-    //   align-items: center;
-    //   float: left;
-    //   width: 522px;
-    //   margin-top: 80px;
-
-    //   &:nth-child(odd) {
-    //     float: right;
-    //   }
+    display: flex;
+    justify-content: space-between;
     li {
       display: flex;
-      width: 80%;
+      width: 48%;
+      max-width: 48%;
       padding: 0 30px;
       justify-content: center;
       margin: 80px auto 0;
@@ -354,6 +397,7 @@ body {
       .misicplay {
         margin-top: 40px;
       }
+
     }
 
   }
@@ -362,7 +406,7 @@ body {
     position: relative;
     width: 258px;
     height: 258px;
-    margin: 0 32px 0 0;
+    margin: 0 20px 0 0;
     flex-shrink: 0;
 
     &--shadow {
@@ -370,7 +414,7 @@ body {
       right: 0;
       bottom: 0;
       border-radius: 16px;
-      background: $BC;
+      background: base.$BC;
       width: 250px;
       height: 250px;
       display: inline-block;
@@ -384,30 +428,31 @@ body {
 
   &__txtblc {
     &--date {
-      color: $CR;
+      color: base.$CR;
       font-size: 1.4rem;
     }
 
     &--badge {
-      background: $BC;
+      background: base.$BC;
       padding: 3px 4px;
     }
 
     &--name {
       font-size: 2.3rem;
-      color: $CR;
-      margin: 18px 0 10px;
+      color: base.$CR;
+      line-height: 1.4;
+      margin: 14px 0;
     }
 
     &--exe {
       font-size: 1.3rem;
       line-height: 1.6;
-      color: $CR;
+      color: base.$CR;
     }
 
     &--purchase {
-      background: $BC;
-      color: $CR;
+      background: base.$BC;
+      color: base.$CR;
       display: inline-block;
       font-size: 2rem;
       text-decoration: none;
@@ -417,6 +462,8 @@ body {
     }
   }
 }
+
+
 .btnWrap{
   max-width: 200px;
   margin: 50px 0 0;
@@ -428,7 +475,7 @@ body {
   }
 }
 .footer {
-  background: $CR;
+  background: base.$CR;
   padding: 40px 0;
 
   &__inner {
@@ -596,7 +643,6 @@ body {
 }
 
 .news {
-  padding: 0 0 50px;
 
   &__ttl {
     white-space: nowrap;
@@ -612,14 +658,16 @@ body {
     list-style: none;
     width: 550px;
     margin: 0 auto 70px;
-
+    a{
+      text-decoration: none;
+    }
     li {
       margin-top: 30px;
     }
 
     &--date {
-      background-color: $BC;
-      color: $CR;
+      background-color: base.$BC;
+      color: base.$CR;
       font-size: 1.2rem;
       line-height: 1.1;
       display: inline-block;
@@ -630,7 +678,7 @@ body {
     &--con {
       font-size: 1.4rem;
       text-align: left;
-      color: $CR;
+      color: base.$CR;
       line-height: 1.5;
     }
   }
@@ -640,7 +688,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto 0;
-    margin: 0 auto;
+    padding: 0 0 50px;
     width: 400px;
     a {
       white-space: nowrap;
@@ -682,7 +730,7 @@ body {
 
   p {
     text-align: center;
-    color: $CR;
+    color: base.$CR;
     font-size: 1.2rem;
   }
 }
@@ -739,7 +787,7 @@ body {
 }
 
 /* タブレット画面サイズが751px以上 */
-@media all and (min-width: $BP+1) and (max-width: 1280px) {
+@media all and (min-width: base.$BP+1) and (max-width: 1280px) {
   @keyframes anim {
     0% {
       transform: translateX(3.9vw);
@@ -794,16 +842,22 @@ body {
   .discovery {
     &__list {
       width: 100%;
-
+      
       // li {
       //   width: 46%;
       // }
+      li{
+        padding: 0;
+        align-items: start;
+        max-width: 46%;
+        width: 46%;
+      }
     }
 
     &__img {
       width: 20.2vw;
       height: 20.2vw;
-      margin: 0 2.5vw 0 0;
+      margin: 0 1.5vw 0 0;
 
       &--shadow {
         width: 19.5vw;
@@ -919,7 +973,7 @@ body {
     display: block!important;
   }
 }
-@media screen and (max-width: $BP) {
+@media screen and (max-width: base.$BP) {
   .menufix{
     position: fixed;
     right: 20px; 
@@ -966,7 +1020,7 @@ body {
 
 
 /* SP 画面サイズが750px以下--------------------------------- */
-@media screen and (max-width: $BP) {
+@media screen and (max-width: base.$BP) {
   .btnWrap{
     max-width: 26.6vw;
     margin: 30px 0 0;
@@ -1072,7 +1126,7 @@ body {
   }
 
   .movie {
-    padding: 9.33vw 0;
+    padding: 16vw 0 10vw;
 
     &__ttl {
       width: 23.06vw;
@@ -1093,7 +1147,7 @@ body {
         font-size: 1rem;
         line-height: 1.5;
         margin-top: 1em;
-        padding-bottom: 10px;
+        padding-bottom: 0;
       }
     }
 
@@ -1108,11 +1162,10 @@ body {
         display: block;
           li{
             width: 100%;
-            margin: 20px 0 0;
+            margin: 0 0 10vw;
 
             list-style: none;
             &:nth-child(2n){
-              margin-top: 50px;
             }
           }
         }
@@ -1140,11 +1193,12 @@ body {
       width: 100%;
       padding: 0 3.5vw;
       padding: 0;
-
+      display: block;
       li {
         display: flex;
         float: none !important;
-        width: 100%;
+        width: 90%;
+        max-width: 90%;
         margin-top: 8vw;
         padding: 0;
         align-items: center;
@@ -1175,7 +1229,7 @@ body {
 
     &__img {
       width: 39.1vw;
-      margin: 0 15px 10px 0;
+      margin: 0 2vw 10px 0;
       height: 39.1vw;
 
       &--shadow {
@@ -1223,7 +1277,7 @@ body {
   }
 
   .news {
-    padding: 0 6.8vw 7.33vw;
+    padding: 0 6.8vw 0;
 
     &__ttl {
       background-size: 100% auto;
@@ -1252,7 +1306,7 @@ body {
 
     &__snslink {
       margin: 0 auto;
-      padding-bottom: 20px;
+      padding-bottom: 8vw;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -1494,7 +1548,7 @@ body {
 }
 
 /* SP 画面サイズが750px以下--------------------------------- */
-@media screen and (max-width: $BP) {
+@media screen and (max-width: base.$BP) {
   .modalWrapper { 
     position: absolute;
     top: 50%;
@@ -1564,7 +1618,7 @@ body {
 }
 
 /* SP 画面サイズが750px以下--------------------------------- */
-@media screen and (max-width: $BP) {
+@media screen and (max-width: base.$BP) {
 
   .footer__renewel{
     &--inner{
@@ -1591,4 +1645,63 @@ body {
       height: 20px;
     }
   }
+}
+
+//ニュースページ
+.newspage{
+  margin: 50px auto;
+  width: 60%;
+
+  &__list{
+    margin: 80px auto 0;
+    padding: 0 30px;
+    color: #FFF;
+    li{
+      width: 100%;
+      padding: 30px;
+      border-bottom: solid 1px #FFF;
+      list-style: none;
+      &:first-child{
+        border-top: solid 1px #FFF;
+      }
+    }
+    &--img{
+      margin: 40px 0 0;
+      img{
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    &--ttl{
+
+      h2{
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 0;
+      }
+    }
+    &--txt{
+      line-height: 1.8;
+      font-size: 14px;
+    }
+    &--date{
+      margin: 10px 0 30px;
+    }
+    &--con{
+      padding-top: 30px;
+      border-top: dotted 1px #FFF;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: base.$BP) {
+
+}
+
+
+@keyframes rotation{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(-90deg); }
 }
