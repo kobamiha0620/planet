@@ -382,9 +382,8 @@ body {
 
   &__list {
     overflow: hidden;
-    width: 1120px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     li {
       display: flex;
       width: 48%;
@@ -1704,4 +1703,10 @@ body {
 @keyframes rotation{
   0%{ transform:rotate(0);}
   100%{ transform:rotate(-90deg); }
+}
+
+
+.discovery__list{
+  flex-wrap: wrap;
+
 }
