@@ -294,10 +294,13 @@ body {
       margin: 0 auto;
       padding: 87px 0 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
         li{
           width: 49%;
+          min-width: 49%;
           list-style: none;
+          margin: 0 0 3%;
         }
       }
     &--movie {

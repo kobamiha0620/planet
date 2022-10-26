@@ -54,4 +54,4 @@ src('src/assets/sass/style.scss')
 
 
 
-exports.default = parallel(series(bsInit, ejsfile, watchTask));
+exports.default = parallel(series(bsInit, watchTask));
