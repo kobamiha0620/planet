@@ -703,7 +703,18 @@ body {
     &--blc{
 
     }
-
+    &--insta {
+      background: url("../img/insta.png") no-repeat 0 0;
+      background-size: 100% auto;
+      width: 46px;
+      height: 46px;
+    }
+    &--tiktok2 {
+      background: url("../img/tiktok.svg") no-repeat 0 0;
+      background-size: 100% auto;
+      width: 46px;
+      height: 46px;
+    }
     &--tiktok {
       background: url("../img/logotiktok.png") no-repeat 0 0;
       background-size: 100% auto;
@@ -714,15 +725,15 @@ body {
     &--youtube {
       background: url("../img/logo_youtube.svg") no-repeat 0 0;
       background-size: 100% auto;
-      width: 62px;
-      height: 62px;
+      width: 56px;
+      height: 56px;
     }
 
     &--twitter {
       background: url("../img/logo_tw.svg") no-repeat 0 0;
       background-size: 100% auto;
-      width: 62px;
-      height: 62px;
+      width: 56px;
+      height: 56px;
     }
   }
 }
@@ -1315,8 +1326,14 @@ body {
       margin: 0 auto 0;
       width: 70vw;
       max-width: 250px;
-
-  
+      &--insta{
+        width: 26px;
+        height: 26px;
+      }
+      &--tiktok2 {
+        width: 26px;
+        height: 26px;
+      }
       &--tiktok {
         width: 80px;
         height: 19px;

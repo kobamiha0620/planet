@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Input your ID and Password."
-AuthUserFile /home/users/1/main.jp-91761ea70cfd0f90/web/.htpasswd
-require valid-user
