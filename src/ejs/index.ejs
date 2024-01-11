@@ -1,190 +1,238 @@
+<!-- 変数名の設定 -->
+<% let pageId = 'home'; %>
 
-  <!-- 変数名の設定 -->
-  <% let pageId = 'home'; %>
-
-  <%- include('./_header', { pageId: pageId }) %>
-
+<%- include('./_header', { pageId: pageId }) %>
 
 
 
-    <%- include('./_menu') %>
 
-    <main class="main">
-      <div class="main__inner">
-        <div class="main__logo">
-          <figure class="logo">SCLAMBLE PLANET</figure>
-        </div>
-        <p class="main__animeR">
-          <figure class="rocketR"></figure>
-          <figure class="borderR"></figure>
-        </p>
+<%- include('./_menu') %>
 
-
-        <p class="main__txt">
-          スクランブルプラネット。<br />
-          そこは創作の星。<br />
-          クリエイターたちが交差して生まれた<br />
-          無限の可能性を秘めるクリエイションが、<br />
-          広大なインターネット空間を漂い私たちに届く。
-        </p>
-        <div class="main__anime">
-          <figure class="rocketL"></figure>
-          <figure class="borderL"></figure>
-        </div>
-
-        <div id="movie" class="movie">
-          <h2 class="movie__ttl">movie</h2>
-          
+<main class="main">
+  <div class="main__inner">
+    <div class="main__logo">
+      <figure class="logo">SCLAMBLE PLANET</figure>
+    </div>
+    <p class="main__animeR">
+      <figure class="rocketR"></figure>
+      <figure class="borderR"></figure>
+    </p>
 
 
-          <ul class="movie__double--wrapper">
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WCo57WjcoJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
-                  <p class="movie__youtube--txt">
-                「Bullets」/ konoco × こばしり。 <br />
-                Sound Produced by MIMI（SCRAMBLE PLANET）</p>
-            </li>
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RgpEqC_7zyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-              <p class="movie__youtube--txt">
-                「星空逃飛行」 / 木咲桃華<br />
-                Sound Produced by にっけい(SCRAMBLE PLANET）</p>
-            </li>
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J2tPDXjX5Ig" title="「青春下剋上」/ あすか Sound Produced by HoneyWorks＆音莉飴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p class="movie__youtube--txt">
-                青春下剋上 / あすか <br />
-                Sound Produced by HoneyWorks＆音莉飴</p>
-            </li>
-            <li>
-              <div class="movie__double--movie">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EhgMIfjjpWc" title="SCRAMBLE PLANET CONCEPT MOVIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p class="movie__youtube--txt">
-                「食べたい。」/ 音莉飴<br />
-                Sound Produced by HoneyWorks
-                (SCRAMBLE PLANET）
-              </p>
-            </li> 
+    <p class="main__txt">
+      スクランブルプラネット。<br />
+      そこは創作の星。<br />
+      クリエイターたちが交差して生まれた<br />
+      無限の可能性を秘めるクリエイションが、<br />
+      広大なインターネット空間を漂い私たちに届く。
+    </p>
+    <div class="main__anime">
+      <figure class="rocketL"></figure>
+      <figure class="borderL"></figure>
+    </div>
 
-          </ul>
+    <div id="movie" class="movie">
+      <h2 class="movie__ttl">movie</h2>
 
 
-          <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener" class="movie__more--btn"><span class="movie__more--txt">MORE</span><span class="movie__more--arrow"></span></a>
+
+      <ul class="movie__double--wrapper">
+        <li>
+          <div class="movie__double--movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fKVDpY5Q_jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+          <p class="movie__youtube--txt">
+            「スティカ」/ 天宮音羽<br />
+            Sound Produced by Mizore</p>
+        </li>
+        <li>
+          <div class="movie__double--movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WCo57WjcoJ8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe> </div>
+          <p class="movie__youtube--txt">
+            「Bullets」/ konoco × こばしり。 <br />
+            Sound Produced by MIMI</p>
+        </li>
+        <li>
+          <div class="movie__double--movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RgpEqC_7zyE"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe> </div>
+          <p class="movie__youtube--txt">
+            「星空逃飛行」 / 木咲桃華<br />
+            Sound Produced by にっけい</p>
+        </li>
+        <li>
+          <div class="movie__double--movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J2tPDXjX5Ig"
+              title="「青春下剋上」/ あすか Sound Produced by HoneyWorks＆音莉飴" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="movie__youtube--txt">
+            青春下剋上 / あすか <br />
+            Sound Produced by HoneyWorks＆音莉飴</p>
+        </li>
+        <li>
+          <div class="movie__double--movie">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EhgMIfjjpWc"
+              title="SCRAMBLE PLANET CONCEPT MOVIE" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="movie__youtube--txt">
+            「食べたい。」/ 音莉飴<br />
+            Sound Produced by HoneyWorks</p>
+        </li>
+
+      </ul>
 
 
-        </div>
+      <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
+        class="movie__more--btn"><span class="movie__more--txt">MORE</span><span class="movie__more--arrow"></span></a>
 
-        <div class="discovery" id="discography">
-          <h2 class="discovery__ttl">discography</h2>
 
-          <ul class="discovery__list">
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/img_ballet.jpg" alt="" style="border-radius: 16px;" />
-              </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date"> 
-                  2022.12.23
-                  <span class="discovery__txtblc--badge">配信中</span>
-                </p>
-                <p class="discovery__txtblc--name">Bullets / <br>konoco × こばしり。</p>
-                <p class="discovery__txtblc--exe">Sound produced by MIMI</p>
-                <div class="btnWrap">
-                  <a href="https://linkco.re/VMXBqdZV" target="_blank" class="btnStreaming"></a>
-                </div>
-              </div>
-            </li>
+    </div>
 
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/newsimg03.jpg" alt="" style="border-radius: 16px;" />
-              </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date">
-                  2022.09.27
-                  <span class="discovery__txtblc--badge">配信中</span>
-                </p>
-                <p class="discovery__txtblc--name">「星空逃飛行」 /<br>木咲桃華</p>
-                <p class="discovery__txtblc--exe">Sound Produced by にっけい  (SCRAMBLE PLANET）</p>
-                <div class="btnWrap">
-                  <a href="https://linkco.re/YYdVz760" target="_blank" class="btnStreaming"></a>
-                </div>
-              </div>
-            </li>
- 
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/Newsimg02.png" alt="" style="border-radius: 16px;" />
-              </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date">
-                  2022.06.03
-                  <span class="discovery__txtblc--badge">配信中</span>
-                </p>
-                <p class="discovery__txtblc--name">青春下剋上 /<br>あすか</p>
-                <p class="discovery__txtblc--exe">Sound Produced by HoneyWorks ＆ 音莉飴</p>
-                <div class="btnWrap">
-                  <a href="https://linkco.re/a4enYHFz" target="_blank" class="btnStreaming"></a>
-                </div>
-              </div>
-            </li>
 
-            
-            <li>
-              <div class="discovery__img">
-                <span class="discovery__img--shadow"></span>
-                <img src="img/firstMusic.svg" alt="" />
-              </div>
-              <div class="discovery__txtblc">
-                <p class="discovery__txtblc--date">
-                  2022.02.03
-                  <span class="discovery__txtblc--badge">配信中</span>
-                </p>
-                <p class="discovery__txtblc--name">「食べたい。」/ 音莉飴</p>
-                <p class="discovery__txtblc--exe">
-                  Sound Produced by HoneyWorks<br>
-                  (SCRAMBLE PLANET）
-                </p>
-                <div class="btnWrap">
-                  <a href="https://linkco.re/tFDu1dzn" target="_blank" class="btnStreaming"></a>
-                </div>
-              </div>
-            </li>
 
-            <li></li>
-          </ul>
-        </div>
 
-        <div class="news" id="news">
-          <h2 class="news__ttl">news</h2>
 
-          <ul class="news__article">
-            <li >
-              <a href="/news.html#latestNews01">
-                <p class="news__article--date">2022.12.23</p>
-              <p class="news__article--con">
-                Bullets/ konoco × こばしり。<br>Sound Produced by MIMI（SCRAMBLE PLANET）ストリーミング配信開始
-              </p>
-            </a>
-            </li>
-            <li >
-              <a href="/news.html#latestNews02">
-                <p class="news__article--date">2022.11.22</p>
-              <p class="news__article--con">
-                第四弾配信限定シングル<br>
-                Bullets/ konoco × こばしり。 Sound Produced by MIMI（SCRAMBLE PLANET）
-              </p>
-            </a>
-            </li>
-            <!-- <li >
+
+
+    <div class="discovery" id="discography">
+      <h2 class="discovery__ttl">discography</h2>
+
+      <ul class="discovery__list">
+        <li>
+          <div class="discovery__img">
+            <span class="discovery__img--shadow"></span>
+            <img src="./img/img_stika.jpg" alt="スティカ" style="border-radius: 16px;" />
+          </div>
+          <div class="discovery__txtblc">
+            <p class="discovery__txtblc--date">
+              2023.6.30
+              <span class="discovery__txtblc--badge">配信中</span>
+            </p>
+            <p class="discovery__txtblc--name">スティカ / <br>天宮音羽</p>
+            <p class="discovery__txtblc--exe">Sound Produced by Mizore</p>
+            <div class="btnWrap">
+              <a href="https://linkco.re/62EBcRS7" target="_blank" class="btnStreaming"></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="discovery__img">
+            <span class="discovery__img--shadow"></span>
+            <img src="img/img_ballet.jpg" alt="" style="border-radius: 16px;" />
+          </div>
+          <div class="discovery__txtblc">
+            <p class="discovery__txtblc--date">
+              2022.12.23
+              <span class="discovery__txtblc--badge">配信中</span>
+            </p>
+            <p class="discovery__txtblc--name">Bullets / <br>konoco × こばしり。</p>
+            <p class="discovery__txtblc--exe">Sound produced by MIMI</p>
+            <div class="btnWrap">
+              <a href="https://linkco.re/VMXBqdZV" target="_blank" class="btnStreaming"></a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="discovery__img">
+            <span class="discovery__img--shadow"></span>
+            <img src="img/newsimg03.jpg" alt="" style="border-radius: 16px;" />
+          </div>
+          <div class="discovery__txtblc">
+            <p class="discovery__txtblc--date">
+              2022.09.27
+              <span class="discovery__txtblc--badge">配信中</span>
+            </p>
+            <p class="discovery__txtblc--name">「星空逃飛行」 /<br>木咲桃華</p>
+            <p class="discovery__txtblc--exe">Sound Produced by にっけい</p>
+            <div class="btnWrap">
+              <a href="https://linkco.re/YYdVz760" target="_blank" class="btnStreaming"></a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="discovery__img">
+            <span class="discovery__img--shadow"></span>
+            <img src="img/Newsimg02.png" alt="" style="border-radius: 16px;" />
+          </div>
+          <div class="discovery__txtblc">
+            <p class="discovery__txtblc--date">
+              2022.06.03
+              <span class="discovery__txtblc--badge">配信中</span>
+            </p>
+            <p class="discovery__txtblc--name">青春下剋上 /<br>あすか</p>
+            <p class="discovery__txtblc--exe">Sound Produced by HoneyWorks ＆ 音莉飴</p>
+            <div class="btnWrap">
+              <a href="https://linkco.re/a4enYHFz" target="_blank" class="btnStreaming"></a>
+            </div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="discovery__img">
+            <span class="discovery__img--shadow"></span>
+            <img src="img/Newsimg01.png" alt="" />
+          </div>
+          <div class="discovery__txtblc">
+            <p class="discovery__txtblc--date">
+              2022.02.03
+              <span class="discovery__txtblc--badge">配信中</span>
+            </p>
+            <p class="discovery__txtblc--name">「食べたい。」/ 音莉飴</p>
+            <p class="discovery__txtblc--exe">
+              Sound Produced by HoneyWorks<br>
+              (SCRAMBLE PLANET）
+            </p>
+            <div class="btnWrap">
+              <a href="https://linkco.re/tFDu1dzn" target="_blank" class="btnStreaming"></a>
+            </div>
+          </div>
+        </li>
+
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="news" id="news">
+      <h2 class="news__ttl">news</h2>
+
+      <ul class="news__article">
+        <li>
+          <a href="/news.html#latestNews01">
+            <p class="news__article--date">2023.6.30</p>
+            <p class="news__article--con">
+              「スティカ」/ 天宮音羽<br>Sound Produced by SCRAMBLE PLANET ストリーミング配信開始
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="/news.html#latestNews02">
+            <p class="news__article--date">2022.12.23</p>
+            <p class="news__article--con">
+              Bullets/ konoco × こばしり。<br>Sound Produced by MIMI（SCRAMBLE PLANET）ストリーミング配信開始
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="/news.html#latestNews03">
+            <p class="news__article--date">2022.11.22</p>
+            <p class="news__article--con">
+              第四弾配信限定シングル<br>
+              Bullets/ konoco × こばしり。 Sound Produced by MIMI（SCRAMBLE PLANET）
+            </p>
+          </a>
+        </li>
+        <!-- <li >
               <a href="/news.html#latestNews02">
                 <p class="news__article--date">2022.09.27</p>
               <p class="news__article--con">
@@ -194,84 +242,84 @@
             </li> -->
 
 
-          </ul>
+      </ul>
 
-          <!-- モーダルエリアここから -->
-          <section id="modalArea" class="modalArea">
-            <div id="modalBg" class="modalBg"></div>
-            <div class="modalWrapper">
-              <div class="modalInner">
-                <div class="modalContents">
-                  <p class="modalTtl">SCRAMBLE PLANETから第一弾となる配信限定シングル<br>
-                    「食べたい。」音莉飴 Sound Produced by HoneyWorksがリリース！</p>
-                  <p class="modalTxt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
-                    さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
+      <!-- モーダルエリアここから -->
+      <section id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalInner">
+            <div class="modalContents">
+              <p class="modalTtl">SCRAMBLE PLANETから第一弾となる配信限定シングル<br>
+                「食べたい。」音莉飴 Sound Produced by HoneyWorksがリリース！</p>
+              <p class="modalTxt">TikTokで話題の『陽キャJKに憧れる隠キャJKの歌』を手がけた音莉飴（ねりあめ）が歌・楽曲、HoneyWorksがサウンドプロデュースを担当。
+                さらに、イラストはイラストレーターのトウカが参加しました。<br><br>2月3日(木)深夜1時40分からスタートするテレビ東京の新番組『＃ウルトラマワス』の番組テーマ曲にも決定！</p>
 
-                  <div class="modalImg"><img src="img/Newsimg01.png" width="100%" alt="食べたい。"></div>
+              <div class="modalImg"><img src="img/Newsimg01.png" width="100%" alt="食べたい。"></div>
 
-                  <div class="news__snslink">
-                    <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
-                      class="news__snslink--tiktok">tiktok</a>
-                    <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
-                      class="news__snslink--youtube">Youtube</a>
-                    <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
-                      class="news__snslink--twitter">twitter</a>
-                  </div>  
-                </div>
-                <div id="closeModal" class="closeModal">
-                  ×
-                </div>
+              <div class="news__snslink">
+                <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
+                  class="news__snslink--tiktok">tiktok</a>
+                <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
+                  class="news__snslink--youtube">Youtube</a>
+                <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
+                  class="news__snslink--twitter">twitter</a>
               </div>
             </div>
-          </section>
-          <!-- モーダルエリアここまで -->
-
-          <!-- モーダルエリア2ここから -->
-          <section id="modalArea2" class="modalArea">
-            <div id="modalBg" class="modalBg"></div>
-            <div class="modalWrapper" style="height: auto;">
-              <div class="modalInner">
-                <div class="modalContents" >
-                  <p class="modalTtl">テレビ東京「#ウルトラマワス」番組内オーディション「#ウルトラチャレンジ」開催!<br>
-                    SCRAMBLE PLANETが配信デビューを全面サポート</p>
-                  <p class="modalTxt">2月3日からスタートしたテレビ東京の新番組「#ウルトラマワス」。<br>
-                    番組内で音楽オーディション企画を開催いたします。<br>
-                    オーディション名は『#ウルトラチャレンジ』。</p>
-                  <p class="modalTxt" style="margin-top: 20px;">「最優秀賞」に選ばれた方には、あなたのチャレンジを「#ウルトラマワス」が応援！<br>
-                    副賞として、「HoneyWorks」と「音莉飴」によるプロデュース&サポートにより「SCRAMBLE PLANET」があなたのデビューを全面サポート致します。</p>
-
-                    <p class="modalTxt" style="margin-top: 20px; margin-bottom: 40px;">詳細は以下をチェック！<br>
-                      <a href="https://www.tv-tokyo.co.jp/ultramawasu/boshu/" target="_blank">
-                      https://www.tv-tokyo.co.jp/ultramawasu/boshu/</a></p>
-  
-                  <div class="news__snslink">
-                    <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
-                      class="news__snslink--tiktok">tiktok</a>
-                    <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
-                      class="news__snslink--youtube">Youtube</a>
-                    <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
-                      class="news__snslink--twitter">twitter</a>
-                  </div>  
-                </div>
-                <div id="closeModal" class="closeModal">
-                  ×
-                </div>
-              </div>
+            <div id="closeModal" class="closeModal">
+              ×
             </div>
-          </section>
-          <!-- モーダルエリアここまで -->
-
-
-  
+          </div>
         </div>
-      </div>
-    </main>
+      </section>
+      <!-- モーダルエリアここまで -->
+
+      <!-- モーダルエリア2ここから -->
+      <section id="modalArea2" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper" style="height: auto;">
+          <div class="modalInner">
+            <div class="modalContents">
+              <p class="modalTtl">テレビ東京「#ウルトラマワス」番組内オーディション「#ウルトラチャレンジ」開催!<br>
+                SCRAMBLE PLANETが配信デビューを全面サポート</p>
+              <p class="modalTxt">2月3日からスタートしたテレビ東京の新番組「#ウルトラマワス」。<br>
+                番組内で音楽オーディション企画を開催いたします。<br>
+                オーディション名は『#ウルトラチャレンジ』。</p>
+              <p class="modalTxt" style="margin-top: 20px;">「最優秀賞」に選ばれた方には、あなたのチャレンジを「#ウルトラマワス」が応援！<br>
+                副賞として、「HoneyWorks」と「音莉飴」によるプロデュース&サポートにより「SCRAMBLE PLANET」があなたのデビューを全面サポート致します。</p>
+
+              <p class="modalTxt" style="margin-top: 20px; margin-bottom: 40px;">詳細は以下をチェック！<br>
+                <a href="https://www.tv-tokyo.co.jp/ultramawasu/boshu/" target="_blank">
+                  https://www.tv-tokyo.co.jp/ultramawasu/boshu/</a></p>
+
+              <div class="news__snslink">
+                <a href="https://www.tiktok.com/@scrambleplanet" target="_blank" rel="noopener"
+                  class="news__snslink--tiktok">tiktok</a>
+                <a href="https://www.youtube.com/channel/UCW_cSWMpgmA1GkXME6UUJHg" target="_blank" rel="noopener"
+                  class="news__snslink--youtube">Youtube</a>
+                <a href="https://twitter.com/ScramblePlanet" target="_blank" rel="noopener"
+                  class="news__snslink--twitter">twitter</a>
+              </div>
+            </div>
+            <div id="closeModal" class="closeModal">
+              ×
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- モーダルエリアここまで -->
 
 
 
-    <%- include('./_footer', { pageId: pageId }) %>
+    </div>
+  </div>
+</main>
 
-    <% console.log(jsonData) %>
+
+
+<%- include('./_footer', { pageId: pageId }) %>
+
+<% console.log(jsonData) %>
 
 </body>
 
